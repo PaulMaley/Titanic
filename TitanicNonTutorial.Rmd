@@ -191,7 +191,7 @@ age.model <- lm(Age ~ Sex + Pclass + SibSp + Parch + Fare + Title, data=df.withA
 The predictions of `Age` given by the model compared to the known value is shown 
 below. Since it is not obvious nonsense I'll use this model to predict the missing 
 `Age` values in both the training and the test data sets.
-```{r fig.width=6, fig.height=4}
+```{r "fig_age", fig.width=6, fig.height=4}
 ggplot(data=cbind(df.withAge,PredictedAge=fitted(age.model))) + 
                     geom_point(aes(x=Age, y=PredictedAge, colour=Title)) +
                     labs(title='Age imputation', x='Known age from data', y='Predicted age')
@@ -302,7 +302,7 @@ for ( i in 1:N ) {
 ```
 
 and plot the learning curves (here I use `melt` to put the data into a form usable bby `ggplot`)
-```{r fig.width=6, fig.height=4}
+```{r "fig_learning", fig.width=6, fig.height=4}
 lc <- melt(learningCurve, id.vars="data.fraction")
 ggplot(data=lc) + geom_line(aes(x=data.fraction, y=value, group=variable, colour=variable)) + 
     labs(y = 'Accuracy', x = 'Fraction of training set used', title = 'Learning Curves')
