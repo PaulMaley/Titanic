@@ -11,15 +11,18 @@ date: "Friday, October 17, 2014"
  This repo contains the files:
  
   - TitanicNonTutorial.Rmd
-  - TitanicNonTutorial.md
   - figure/fig_age.png
   - figure/fig_learning.png
  
- The md file is produced from the Rmd with the command:
+ You can produce an HTML file from the Rmd with the command:
   
   ```
   knit("TitanicNonTutorial.Rmd")
   ```
+ 
+ This should also produce graphics similar to those in the `figure` directory.
 
- You will need the test.csv and train.csv files 
+
+ You will need the test.csv and train.csv files
  (downloaded from Kaggle) to be in the same directory.
+ 

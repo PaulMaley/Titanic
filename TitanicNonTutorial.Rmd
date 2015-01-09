@@ -13,6 +13,8 @@ I found these to be really good courses, well worth following, all a bit differe
 This is a very much tidied-up version of the work I did for the Titanic competition - a "ML-101" problem; 
 all of the cul-de-sacs, wrong turns and explorations have been omitted in the interests of presenting a reasonable narrative. 
 
+Code is at [github](https://github.com/PaulMaley/Titanic)
+
 ## The problem
 
 Given a training data set of passengers on the Titanic consisting of various features (Age, Sex, Passenger class, ...) and an indicator of whether or not they survived the disaster, predict the survival of passengers in a test data. The competition is judged (as far as I can see) on the *Accuracy* of the predictions, that is the percentage of correctly classified records.
